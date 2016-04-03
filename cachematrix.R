@@ -1,7 +1,9 @@
-## Put comments here that give an overall description of what your
-## functions do
+## Author: Emily Quinn Finney
+## Programming Assignment 2, Introduction to R
+## This module creates a matrix with caching capability.
 
-## Write a short comment describing this function
+## Creates a list of functions that can store the values of a matrix
+## and of its inverse, and can retrieve these values when called upon.
 
 makeCacheMatrix <- function(x = matrix()) {
         inv <- NULL
@@ -16,7 +18,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 
-## Write a short comment describing this function
+## Creates a matrix-solver that can retrieve the value of a matrix created
+## by makeCacheMatrix (if it has been used), and solves for the inverse
+## otherwise.
 
 cacheSolve <- function(x, ...) {
         ## Return a matrix that is the inverse of 'x'
